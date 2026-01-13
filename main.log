@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 JAN 2026 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 JAN 2026 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1104,9 +1104,6 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
 [2.2]
-Underfull \vbox (badness 6396) has occurred while \output is active []
-
-
 
 ) (./sections/06_implications.tex
 Overfull \hbox (4.83272pt too wide) in paragraph at lines 40--1
@@ -1130,18 +1127,25 @@ Overfull \hbox (1.48343pt too wide) in paragraph at lines 4--5
 , long-lived and reusable,
  []
 
-) (./main.bbl)
+) (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+
+[4.4])
+
+
+
+
+Overfull \vbox (1.16599pt too high) has occurred while \output is active []
+
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [4.4]
+) [5.5]
 (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -1151,13 +1155,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F0967EBC07B5D1C0D6B997271D0BBAD5;5033.
  ) 
 Here is how much of TeX's memory you used:
- 21198 strings out of 473190
- 342875 string characters out of 5715801
- 837810 words of memory out of 5000000
- 43549 multiletter control sequences out of 15000+600000
- 706288 words of font info for 324 fonts, out of 8000000 for 9000
+ 21273 strings out of 473190
+ 344398 string characters out of 5715801
+ 834905 words of memory out of 5000000
+ 43582 multiletter control sequences out of 15000+600000
+ 709214 words of font info for 344 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,16n,131p,1029b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,131p,1089b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinu
 mT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiol
@@ -1166,10 +1170,10 @@ LibertineT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine
 /LinLibertineTB.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libe
 rtine/LinLibertineTI.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public
 /newtx/txsys.pfb>
-Output written on main.pdf (4 pages, 405796 bytes).
+Output written on main.pdf (5 pages, 414031 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
  78009 words of extra memory for PDF output out of 89155 (max. 10000000)
 
