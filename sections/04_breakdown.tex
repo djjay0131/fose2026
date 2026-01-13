@@ -1,0 +1,58 @@
+\section{Where Knowledge Accumulation Breaks Down}
+\label{sec:breakdown}
+
+The survey data establish that the software engineering research community is experienced, productive, and globally distributed. Yet respondents recognize persistent challenges in synthesizing results, building on prior work, and tracking evolving ideas. If expertise and participation are not the bottleneck, what structural factors limit cumulative knowledge progress? In this section, we diagnose four interrelated breakdowns that arise from how research artifacts are currently produced, represented, and connected.
+
+\subsection{Papers as Isolated Knowledge Units}
+
+Research papers are designed as self-contained documents. They package claims, evidence, and context into narrative prose optimized for human reading and conference presentation. While this format has served the community well for disseminating new ideas, it creates challenges for cumulative building.
+
+\textbf{Claims are embedded in prose.} A research paper may make multiple claims---about the performance of an approach, the generalizability of findings, or the limitations of prior work. But these claims are woven into paragraphs, interleaved with motivation, related work, and methodological details. Extracting and comparing claims across papers requires reading entire documents, interpreting language, and reconciling terminological differences. There is no structured representation that makes claims directly comparable or composable.
+
+\textbf{Evidence is not structured.} The evidence supporting a claim---datasets, experimental configurations, evaluation metrics, statistical analyses---is typically described in text, presented in tables and figures, and sometimes supplemented with artifacts in repositories. But the linkage between claim and evidence remains implicit. A reader must infer which results support which claims, under what assumptions, and with what constraints. When attempting to build on prior work, researchers must reconstruct these connections from prose, often leading to misinterpretation or incomplete understanding.
+
+\textbf{Results are not directly reusable.} Even when artifacts are shared, the results reported in a paper are fixed at the time of publication. If a dataset is updated, a metric is refined, or a baseline is improved, the original paper does not reflect these changes. Follow-on work must cite the paper, describe the difference, and report new numbers---but the original claim remains static in the literature. Over time, the paper becomes a historical artifact rather than a living record of what is currently known.
+
+The consequence is fragmentation. Each paper is an island of knowledge, connected to others only through citations and prose references. Building cumulative understanding requires repeatedly reading, interpreting, and synthesizing isolated documents---a process that does not scale as the literature grows.
+
+\subsection{Loss of Context and Provenance}
+
+Research is inherently contextual. Every study makes assumptions, operates under constraints, and reflects decisions about what to prioritize and what to defer. Yet this context is often lost or obscured as knowledge moves through the publication pipeline.
+
+\textbf{Motivation and assumptions fade.} A paper's introduction typically explains why a problem is important and what assumptions underlie the proposed approach. But as the work is cited and summarized by others, this context erodes. Later papers reference a result without fully capturing the conditions under which it holds. A finding that was carefully qualified in the original work becomes an unqualified fact in subsequent literature. Over time, the original motivation and boundary conditions become difficult to recover.
+
+\textbf{Methodological decisions are not preserved.} Research involves countless decisions: which dataset to use, how to split training and test sets, which baselines to compare against, how to handle edge cases. Papers describe these decisions in methods sections, but the rationale---why this choice rather than another---is often implicit or omitted due to space constraints. When researchers attempt to replicate or extend the work, they must reverse-engineer these decisions, sometimes discovering that subtle choices had significant impact on results. The provenance of decisions is lost.
+
+\textbf{Evolution of ideas is not tracked.} Ideas evolve as they move through the research process. An initial hypothesis may be refined, a technique may be adapted for a new domain, or a negative result may shift the direction of inquiry. But papers present polished, final versions of ideas. The path from initial conception to published result---the false starts, pivots, and accumulated insights---remains invisible. This evolutionary context could be valuable for others working on related problems, but it is rarely captured in the artifact of record.
+
+When context and provenance are lost, later researchers must either accept prior work at face value or invest substantial effort reconstructing the reasoning behind it. This friction slows cumulative progress and increases the risk of misapplication or misinterpretation.
+
+\subsection{Claims Evolve Without Tracking}
+
+Scientific claims are not static. They are refined, qualified, contradicted, and superseded as new evidence accumulates. Yet the publication system provides limited mechanisms for tracking these changes over time.
+
+\textbf{Contradictions go unnoticed.} The literature may contain conflicting claims: one paper reports that technique A outperforms technique B, while another finds the opposite. These contradictions may arise from differences in datasets, experimental setups, or evaluation criteria---but they are not systematically flagged or resolved. Researchers discovering these conflicts must investigate the causes themselves, often finding that subtle differences in methodology account for divergent results. Without structured tracking of claims and their relationships, contradictions remain latent in the literature.
+
+\textbf{Refinements are implicit.} A follow-on paper may refine or qualify a prior claim: ``Technique A works well for problem class X but not for problem class Y.'' This refinement is documented in the new paper, but the original claim remains unchanged. A reader consulting the older paper will not know that its findings have been refined unless they also discover the newer work. The relationship between the original claim and its refinement is captured only through citation and prose---mechanisms that do not scale to tracking fine-grained updates across a growing corpus.
+
+\textbf{Relationships between claims are unclear.} Does one claim extend, contradict, depend on, or generalize another? These relationships are expressed in natural language: ``building on [12],'' ``in contrast to [34],'' ``our results suggest that...'' But extracting and formalizing these relationships requires interpretation. Without explicit, structured representations, it is difficult to trace how a claim has evolved through multiple papers, which claims support or refute each other, and which gaps remain to be addressed.
+
+The result is that the state of knowledge remains fragmented and ambiguous. Researchers must perform extensive manual synthesis to determine what is currently believed, under what conditions, and with what confidence.
+
+\subsection{Incentive Structures Favor Novelty Over Accumulation}
+
+The final breakdown is not purely technical---it is embedded in the incentive structures that shape research practice. Publication venues, hiring and promotion criteria, and funding mechanisms reward novelty and originality. Consolidation, replication, and infrastructure work, while valuable for cumulative progress, are often undervalued.
+
+\textbf{Publication rewards new contributions.} Conference and journal review processes prioritize papers that present new techniques, findings, or insights. Replication studies, negative results, and incremental refinements face higher bars for acceptance. A paper that carefully synthesizes prior work, resolves contradictions, or provides infrastructure for cumulative building may be seen as insufficiently novel, even if it would significantly advance the field's collective understanding. The system incentivizes producing new papers over consolidating existing knowledge.
+
+\textbf{Replication and consolidation are marginalized.} Researchers who invest time in replicating prior work, curating datasets, or building shared infrastructure face opportunity costs. These efforts may not yield publications in top venues, and they may not be credited as highly in tenure and promotion reviews. The result is a collective action problem: everyone would benefit from better knowledge infrastructure, but individual researchers are disincentivized from contributing to it.
+
+\textbf{Infrastructure work is undervalued.} Building systems that support cumulative knowledge---repositories, ontologies, quality standards, interoperability layers---requires sustained, long-term effort. Such work is often led by a small number of dedicated individuals or groups, without commensurate recognition or support. The broader community benefits from these infrastructures, but the incentives to create and maintain them remain weak relative to the incentives to publish novel research.
+
+These structural incentives shape behavior at every level: what researchers choose to work on, what papers reviewers accept, and what contributions institutions reward. As long as novelty is privileged over accumulation, knowledge will remain fragmented, and progress will be constrained.
+
+\subsection{Interconnected Challenges}
+
+These four breakdowns are not independent. They reinforce one another. Isolated, prose-based knowledge units make it difficult to track evolving claims. Loss of context and provenance makes it harder to synthesize results across papers. Incentive structures discourage the sustained effort required to address these barriers. Together, they create a system in which knowledge accumulates slowly and inefficiently, despite the community's expertise, productivity, and good intentions.
+
+The implication is clear: incremental fixes---better citation practices, more replications, improved repositories---are necessary but insufficient. Addressing these structural barriers requires rethinking the fundamental properties of research artifacts themselves. What would it take to design artifacts that support cumulative, interpretable, and reusable knowledge building? We turn to this question in the next section.

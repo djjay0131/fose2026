@@ -1,0 +1,40 @@
+\section{Background and Related Perspectives}
+\label{sec:background}
+
+The challenges of cumulative knowledge building are not unique to software engineering, nor are they new. Across scientific disciplines, researchers and meta-researchers have documented tensions between publication growth and knowledge synthesis, raised concerns about reproducibility and replication, and called for better infrastructure to support long-term scientific progress. This section situates our work within these broader conversations.
+
+\subsection{Knowledge Accumulation in Science}
+
+The challenge of accumulating knowledge has been a recurring theme in philosophy of science and meta-research. Kuhn's notion of paradigm shifts highlighted periods of consolidation and synthesis~\cite{kuhn1962}. More recently, concerns about the ``reproducibility crisis'' have drawn attention to the difficulty of verifying and building on prior results~\cite{ioannidis2005,baker2016}. These discussions emphasize that scientific progress depends not only on producing new findings but also on mechanisms for validating, integrating, and reusing prior work.
+
+In software engineering, similar concerns have been raised. Studies have documented challenges in replication~\cite{juristo2011,herman2020}, challenges in synthesizing results across empirical studies~\cite{kitchenham2007}, and the difficulty of comparing techniques when methodologies and datasets vary~\cite{basili1999}. Researchers have also noted that the field's rapid growth, while positive in many ways, has made it harder to maintain shared understanding and cumulative building across subfields~\cite{sjberg2007}.
+
+\subsection{Research Infrastructure and Artifacts}
+
+A growing body of work has explored how research infrastructure can support cumulative progress. Cyberinfrastructure initiatives~\cite{atkins2003} have emphasized the need for shared computational resources, data repositories, and collaborative platforms. In software engineering specifically, efforts like artifact evaluation tracks~\cite{herman2020}, benchmark repositories~\cite{do2005}, and replication packages~\cite{gonzalez-barahona2012} aim to make research more transparent and reusable.
+
+Beyond software engineering, knowledge graph initiatives in other scientific domains offer relevant examples. The Open Research Knowledge Graph (ORKG)~\cite{orkg} structures contributions from scientific papers as semantic triples, enabling comparison and aggregation across studies. Similar efforts in scientific knowledge extraction~\cite{luan2024} and academic graph construction~\cite{wang2020} aim to represent scholarly knowledge in machine-readable, queryable forms. These systems demonstrate the potential of structured representations to support synthesis, but they also highlight challenges: creating and maintaining such infrastructures requires sustained effort, community coordination, and alignment of incentives~\cite{collberg2016}.
+
+\subsection{Incentive Structures and Community Practices}
+
+Several researchers have examined how incentive structures shape scientific practice. Publication pressures, the emphasis on novelty in review processes, and the undervaluation of negative results and replication have all been identified as barriers to cumulative progress~\cite{smaldino2016,nosek2012}. In software engineering, Shull et al.~\cite{shull2008} discussed the role of community infrastructure and incentives in supporting empirical research. More recent work has called for recognizing contributions to datasets, benchmarks, and infrastructure as valuable scholarly outputs~\cite{allen2019}.
+
+The tension between individual incentives (publishing novel results to advance one's career) and collective needs (consolidating knowledge, maintaining infrastructure) is a well-recognized collective action problem~\cite{osterloh2020}. Addressing it requires not only technical solutions but also changes in how contributions are evaluated, how credit is assigned, and how community resources are governed.
+
+\subsection{Meta-Research and Science of Science}
+
+The emerging field of meta-research, or the ``science of science,'' studies the processes and structures that shape scientific work~\cite{ioannidis2018,fortunato2018}. This research has documented patterns in citation networks, collaboration structures, and the lifecycle of scientific ideas. It has also examined how publication systems, peer review, and funding mechanisms influence what research gets done and how it is communicated~\cite{wang2013}.
+
+One relevant finding is that scientific communities differ in how well they support cumulative building. Fields with well-established benchmarks, standardized evaluation protocols, and shared datasets often exhibit faster cumulative progress than fields where each study uses custom methodologies~\cite{donoho2017}. This suggests that infrastructure for comparison and reuse can have measurable impacts on the pace of knowledge accumulation.
+
+\subsection{Positioning This Work}
+
+Our work builds on these perspectives but focuses specifically on structural factors that limit cumulative progress in software engineering research. We differ from prior work in three ways:
+
+First, we ground our analysis in community perspectives gathered through the ICSE 2026 FOSE pre-survey. Rather than relying solely on bibliometric analysis or case studies, we use survey data to establish that the community itself recognizes accumulation challenges and that these challenges persist despite high levels of expertise and productivity.
+
+Second, we provide a structured diagnosis of four interrelated breakdowns, connecting individual challenges (isolated papers, lost context, untracked claims, misaligned incentives) into a coherent account of why progress remains constrained.
+
+Third, we articulate technology-agnostic principles for future research artifacts rather than proposing specific tools or platforms. Our goal is not to advocate for any particular system but to describe properties that any infrastructure aiming to support cumulative progress should strive for. This framing is intentionally broad, allowing for diverse implementations across different subfields and research communities.
+
+We do not claim that these challenges are unique to software engineering, nor that solutions developed in other fields are irrelevant. Instead, we offer a community-informed synthesis tailored to the software engineering context, with the hope that the principles we articulate can inform both local efforts within the field and broader conversations about the future of scientific infrastructure.
