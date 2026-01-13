@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{24}
+\begin{thebibliography}{4}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,94 +36,6 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[Allen et~al\mbox{.}(2014)]%
-        {allen2019}
-\bibfield{author}{\bibinfo{person}{Liz Allen}, \bibinfo{person}{Jo Scott},
-  \bibinfo{person}{Amy Brand}, \bibinfo{person}{Marjorie Hlava}, {and}
-  \bibinfo{person}{Micah Altman}.} \bibinfo{year}{2014}\natexlab{}.
-\newblock \showarticletitle{Publishing: Credit where credit is due}.
-\newblock \bibinfo{journal}{\emph{Nature}} \bibinfo{volume}{508},
-  \bibinfo{number}{7496} (\bibinfo{year}{2014}), \bibinfo{pages}{312--313}.
-\newblock
-\href{https://doi.org/10.1038/508312a}{doi:\nolinkurl{10.1038/508312a}}
-
-
-\bibitem[Atkins et~al\mbox{.}(2003)]%
-        {atkins2003}
-\bibfield{author}{\bibinfo{person}{Daniel~E. Atkins},
-  \bibinfo{person}{Kelvin~K. Droegemeier}, \bibinfo{person}{Stuart~I. Feldman},
-  \bibinfo{person}{Hector Garcia-Molina}, \bibinfo{person}{Michael~L. Klein},
-  \bibinfo{person}{David~G. Messerschmitt}, \bibinfo{person}{Paul Messina},
-  \bibinfo{person}{Jeremiah~P. Ostriker}, {and} \bibinfo{person}{Margaret~H.
-  Wright}.} \bibinfo{year}{2003}\natexlab{}.
-\newblock \showarticletitle{Revolutionizing Science and Engineering Through
-  Cyberinfrastructure: Report of the National Science Foundation Blue Ribbon
-  Advisory Panel on Cyberinfrastructure}.
-\newblock \bibinfo{journal}{\emph{National Science Foundation}}
-  (\bibinfo{year}{2003}).
-\newblock
-
-
-\bibitem[Baker(2016)]%
-        {baker2016}
-\bibfield{author}{\bibinfo{person}{Monya Baker}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{1,500 scientists lift the lid on reproducibility}.
-\newblock \bibinfo{journal}{\emph{Nature}} \bibinfo{volume}{533},
-  \bibinfo{number}{7604} (\bibinfo{year}{2016}), \bibinfo{pages}{452--454}.
-\newblock
-\href{https://doi.org/10.1038/533452a}{doi:\nolinkurl{10.1038/533452a}}
-
-
-\bibitem[Basili et~al\mbox{.}(1999)]%
-        {basili1999}
-\bibfield{author}{\bibinfo{person}{Victor~R. Basili}, \bibinfo{person}{Forrest
-  Shull}, {and} \bibinfo{person}{Filippo Lanubile}.}
-  \bibinfo{year}{1999}\natexlab{}.
-\newblock \showarticletitle{Building knowledge through families of
-  experiments}.
-\newblock \bibinfo{journal}{\emph{IEEE Transactions on Software Engineering}}
-  \bibinfo{volume}{25}, \bibinfo{number}{4}, \bibinfo{pages}{456--473}.
-\newblock
-\href{https://doi.org/10.1109/32.799955}{doi:\nolinkurl{10.1109/32.799955}}
-
-
-\bibitem[Collberg and Proebsting(2016)]%
-        {collberg2016}
-\bibfield{author}{\bibinfo{person}{Christian Collberg} {and}
-  \bibinfo{person}{Todd~A. Proebsting}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Repeatability in Computer Systems Research}.
-\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{59},
-  \bibinfo{number}{3}, \bibinfo{pages}{62--69}.
-\newblock
-\href{https://doi.org/10.1145/2812803}{doi:\nolinkurl{10.1145/2812803}}
-
-
-\bibitem[Do et~al\mbox{.}(2005)]%
-        {do2005}
-\bibfield{author}{\bibinfo{person}{Hyunsook Do}, \bibinfo{person}{Sebastian
-  Elbaum}, {and} \bibinfo{person}{Gregg Rothermel}.}
-  \bibinfo{year}{2005}\natexlab{}.
-\newblock \showarticletitle{Supporting controlled experimentation with testing
-  techniques: An infrastructure and its potential impact}.
-\newblock \bibinfo{journal}{\emph{Empirical Software Engineering}}
-  \bibinfo{volume}{10}, \bibinfo{number}{4}, \bibinfo{pages}{405--435}.
-\newblock
-\href{https://doi.org/10.1007/s10664-005-3861-2}{doi:\nolinkurl{10.1007/s10664-005-3861-2}}
-
-
-\bibitem[Donoho(2017)]%
-        {donoho2017}
-\bibfield{author}{\bibinfo{person}{David Donoho}.}
-  \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{50 Years of Data Science}.
-\newblock \bibinfo{journal}{\emph{Journal of Computational and Graphical
-  Statistics}} \bibinfo{volume}{26}, \bibinfo{number}{4}
-  (\bibinfo{year}{2017}), \bibinfo{pages}{745--766}.
-\newblock
-\href{https://doi.org/10.1080/10618600.2017.1384734}{doi:\nolinkurl{10.1080/10618600.2017.1384734}}
-
-
 \bibitem[Fortunato et~al\mbox{.}(2018)]%
         {fortunato2018}
 \bibfield{author}{\bibinfo{person}{Santo Fortunato}, \bibinfo{person}{Carl~T.
@@ -142,32 +54,6 @@
 \href{https://doi.org/10.1126/science.aao0185}{doi:\nolinkurl{10.1126/science.aao0185}}
 
 
-\bibitem[Gonz{\' a}lez-Barahona and Robles(2012)]%
-        {gonzalez-barahona2012}
-\bibfield{author}{\bibinfo{person}{Jes{\'u}s~M. Gonz{\' a}lez-Barahona} {and}
-  \bibinfo{person}{Gregorio Robles}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{On the reproducibility of empirical software
-  engineering studies based on data retrieved from development repositories}.
-\newblock \bibinfo{journal}{\emph{Empirical Software Engineering}}
-  \bibinfo{volume}{17}, \bibinfo{number}{1-2} (\bibinfo{year}{2012}),
-  \bibinfo{pages}{75--89}.
-\newblock
-\href{https://doi.org/10.1007/s10664-011-9181-9}{doi:\nolinkurl{10.1007/s10664-011-9181-9}}
-
-
-\bibitem[Herman et~al\mbox{.}(2020)]%
-        {herman2020}
-\bibfield{author}{\bibinfo{person}{Ben Herman}, \bibinfo{person}{Emily Winter},
-  \bibinfo{person}{Michail~D. Papamichail}, \bibinfo{person}{Georgios Gousios},
-  {and} \bibinfo{person}{Andy Zaidman}.} \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{A 2020 perspective on the replicability of software
-  engineering research}. In \bibinfo{booktitle}{\emph{Proceedings of the 14th
-  ACM/IEEE International Symposium on Empirical Software Engineering and
-  Measurement (ESEM)}}. \bibinfo{pages}{1--12}.
-\newblock
-\href{https://doi.org/10.1145/3382494.3410652}{doi:\nolinkurl{10.1145/3382494.3410652}}
-
-
 \bibitem[Ioannidis(2005)]%
         {ioannidis2005}
 \bibfield{author}{\bibinfo{person}{John P.~A. Ioannidis}.}
@@ -177,107 +63,6 @@
   \bibinfo{number}{8} (\bibinfo{year}{2005}), \bibinfo{pages}{e124}.
 \newblock
 \href{https://doi.org/10.1371/journal.pmed.0020124}{doi:\nolinkurl{10.1371/journal.pmed.0020124}}
-
-
-\bibitem[Ioannidis(2018)]%
-        {ioannidis2018}
-\bibfield{author}{\bibinfo{person}{John P.~A. Ioannidis}.}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Meta-research: Why research on research matters}.
-\newblock \bibinfo{journal}{\emph{PLOS Biology}} \bibinfo{volume}{16},
-  \bibinfo{number}{3} (\bibinfo{year}{2018}), \bibinfo{pages}{e2005468}.
-\newblock
-\href{https://doi.org/10.1371/journal.pbio.2005468}{doi:\nolinkurl{10.1371/journal.pbio.2005468}}
-
-
-\bibitem[Jaradeh et~al\mbox{.}(2019)]%
-        {orkg}
-\bibfield{author}{\bibinfo{person}{Mohamad~Yaser Jaradeh},
-  \bibinfo{person}{Allard Oelen}, \bibinfo{person}{Kheir~Eddine Farfar},
-  \bibinfo{person}{Manuel Prinz}, \bibinfo{person}{Jennifer D'Souza},
-  \bibinfo{person}{G{\'a}bor Kismih{\'o}k}, \bibinfo{person}{Markus Stocker},
-  {and} \bibinfo{person}{S{\"o}ren Auer}.} \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{Open Research Knowledge Graph: Next Generation
-  Infrastructure for Semantic Scholarly Knowledge}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the 10th International Conference on
-  Knowledge Capture}}. \bibinfo{pages}{243--246}.
-\newblock
-\href{https://doi.org/10.1145/3360901.3364435}{doi:\nolinkurl{10.1145/3360901.3364435}}
-
-
-\bibitem[Juristo and Vegas(2011)]%
-        {juristo2011}
-\bibfield{author}{\bibinfo{person}{Natalia Juristo} {and} \bibinfo{person}{Sira
-  Vegas}.} \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{Using differences among replications of software
-  engineering experiments to gain knowledge}.
-\newblock \bibinfo{journal}{\emph{Empirical Software Engineering}}
-  \bibinfo{volume}{16}, \bibinfo{number}{4} (\bibinfo{year}{2011}),
-  \bibinfo{pages}{511--545}.
-\newblock
-\href{https://doi.org/10.1007/s10664-010-9146-1}{doi:\nolinkurl{10.1007/s10664-010-9146-1}}
-
-
-\bibitem[Kitchenham et~al\mbox{.}(2009)]%
-        {kitchenham2007}
-\bibfield{author}{\bibinfo{person}{Barbara Kitchenham}, \bibinfo{person}{Pearl
-  Brereton}, \bibinfo{person}{David Budgen}, \bibinfo{person}{Mark Turner},
-  \bibinfo{person}{John Bailey}, {and} \bibinfo{person}{Stephen Linkman}.}
-  \bibinfo{year}{2009}\natexlab{}.
-\newblock \showarticletitle{Systematic literature reviews in software
-  engineering -- A systematic literature review}.
-\newblock \bibinfo{journal}{\emph{Information and Software Technology}}
-  \bibinfo{volume}{51}, \bibinfo{number}{1} (\bibinfo{year}{2009}),
-  \bibinfo{pages}{7--15}.
-\newblock
-\href{https://doi.org/10.1016/j.infsof.2008.09.009}{doi:\nolinkurl{10.1016/j.infsof.2008.09.009}}
-
-
-\bibitem[Kuhn(1962)]%
-        {kuhn1962}
-\bibfield{author}{\bibinfo{person}{Thomas~S. Kuhn}.}
-  \bibinfo{year}{1962}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{The Structure of Scientific Revolutions}
-  (\bibinfo{edition}{1st} ed.)}.
-\newblock \bibinfo{publisher}{University of Chicago Press}.
-\newblock
-
-
-\bibitem[Luan et~al\mbox{.}(2018)]%
-        {luan2024}
-\bibfield{author}{\bibinfo{person}{Yi Luan}, \bibinfo{person}{Luheng He},
-  \bibinfo{person}{Mari Ostendorf}, {and} \bibinfo{person}{Hannaneh
-  Hajishirzi}.} \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Multi-Task Identification of Entities, Relations,
-  and Coreference for Scientific Knowledge Graph Construction}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the 2018 Conference on Empirical
-  Methods in Natural Language Processing}}. \bibinfo{pages}{3219--3232}.
-\newblock
-\href{https://doi.org/10.18653/v1/D18-1360}{doi:\nolinkurl{10.18653/v1/D18-1360}}
-
-
-\bibitem[Nosek et~al\mbox{.}(2012)]%
-        {nosek2012}
-\bibfield{author}{\bibinfo{person}{Brian~A. Nosek}, \bibinfo{person}{Jeffrey~R.
-  Spies}, {and} \bibinfo{person}{Matt Motyl}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Scientific Utopia: II. Restructuring Incentives and
-  Practices to Promote Truth Over Publishability}.
-\newblock \bibinfo{journal}{\emph{Perspectives on Psychological Science}}
-  \bibinfo{volume}{7}, \bibinfo{number}{6} (\bibinfo{year}{2012}),
-  \bibinfo{pages}{615--631}.
-\newblock
-\href{https://doi.org/10.1177/1745691612459058}{doi:\nolinkurl{10.1177/1745691612459058}}
-
-
-\bibitem[Osterloh and Frey(2020)]%
-        {osterloh2020}
-\bibfield{author}{\bibinfo{person}{Margit Osterloh} {and}
-  \bibinfo{person}{Bruno~S. Frey}.} \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{How to avoid borrowed plumes in academia}.
-\newblock \bibinfo{journal}{\emph{Research Policy}} \bibinfo{volume}{49},
-  \bibinfo{number}{1} (\bibinfo{year}{2020}), \bibinfo{pages}{103831}.
-\newblock
-\href{https://doi.org/10.1016/j.respol.2019.103831}{doi:\nolinkurl{10.1016/j.respol.2019.103831}}
 
 
 \bibitem[Shull et~al\mbox{.}(2008)]%
@@ -302,44 +87,6 @@
   Engineering}} (\bibinfo{year}{2008}), \bibinfo{pages}{312--336}.
 \newblock
 \href{https://doi.org/10.1007/978-1-84800-044-5_12}{doi:\nolinkurl{10.1007/978-1-84800-044-5_12}}
-
-
-\bibitem[Smaldino and McElreath(2016)]%
-        {smaldino2016}
-\bibfield{author}{\bibinfo{person}{Paul~E. Smaldino} {and}
-  \bibinfo{person}{Richard McElreath}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{The natural selection of bad science}.
-\newblock \bibinfo{journal}{\emph{Royal Society Open Science}}
-  \bibinfo{volume}{3}, \bibinfo{number}{9} (\bibinfo{year}{2016}),
-  \bibinfo{pages}{160384}.
-\newblock
-\href{https://doi.org/10.1098/rsos.160384}{doi:\nolinkurl{10.1098/rsos.160384}}
-
-
-\bibitem[Wang and Barab{\'a}si(2013)]%
-        {wang2013}
-\bibfield{author}{\bibinfo{person}{Dashun Wang} {and}
-  \bibinfo{person}{Albert-L{\'a}szl{\'o} Barab{\'a}si}.}
-  \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{The Science of Science}.
-\newblock \bibinfo{journal}{\emph{Physics Reports}} \bibinfo{volume}{510},
-  \bibinfo{number}{3} (\bibinfo{year}{2013}), \bibinfo{pages}{87--149}.
-\newblock
-\href{https://doi.org/10.1016/j.physrep.2012.02.006}{doi:\nolinkurl{10.1016/j.physrep.2012.02.006}}
-
-
-\bibitem[Wang et~al\mbox{.}(2020)]%
-        {wang2020}
-\bibfield{author}{\bibinfo{person}{Kuansan Wang}, \bibinfo{person}{Zhihong
-  Shen}, \bibinfo{person}{Chiyuan Huang}, \bibinfo{person}{Chieh-Han Wu},
-  \bibinfo{person}{Yuxiao Dong}, {and} \bibinfo{person}{Anshul Kanakia}.}
-  \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{Microsoft Academic Graph: When experts are not
-  enough}.
-\newblock \bibinfo{journal}{\emph{Quantitative Science Studies}}
-  \bibinfo{volume}{1}, \bibinfo{number}{1}, \bibinfo{pages}{396--413}.
-\newblock
-\href{https://doi.org/10.1162/qss_a_00021}{doi:\nolinkurl{10.1162/qss_a_00021}}
 
 
 \end{thebibliography}
