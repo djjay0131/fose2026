@@ -1595,8 +1595,7 @@
   \fi
 }
 \if@ACM@journal\else
-\acmConference[Conference'17]{ACM Conference}{July 2017}{Washington,
-  DC, USA}%
+\acmConference[Conference'26]{ACM Conference}{April 2026}{Rio De Janeiro, Brazil}%
 \fi
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
 \acmBooktitle{}
