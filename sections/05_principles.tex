@@ -1,9 +1,7 @@
 \section{Rethinking Research Artifacts for Cumulative Progress}
 \label{sec:principles}
 
-The structural barriers diagnosed in the previous section are not inevitable. They arise from design choices embedded in how research artifacts are currently produced and shared. If papers-as-documents create fragmentation, and if current incentive structures discourage consolidation, then addressing these challenges requires reconsidering the fundamental properties that research artifacts should have. In this section, we articulate four principles to guide the design of artifacts that support cumulative, interpretable, and reusable knowledge building.
-
-These principles are intentionally abstract. We do not prescribe specific technologies, platforms, or workflows. Instead, we describe properties that any system, tool, or practice aiming to support knowledge accumulation should strive for. Concrete implementations will vary across domains and communities, but the underlying principles provide a shared foundation for evaluating and improving research infrastructure.
+The structural barriers arise from design choices in how artifacts are produced and shared. Addressing them requires reconsidering fundamental artifact properties. We articulate four technology-agnostic principles describing properties that systems, tools, or practices aiming to support knowledge accumulation should strive for. Implementations will vary across domains, but these principles provide a shared foundation for evaluating research infrastructure.
 
 \subsection{Principle 1: Structured and Interpretable}
 
@@ -11,94 +9,32 @@ These principles are intentionally abstract. We do not prescribe specific techno
 
 The first breakdown---papers as isolated units---stems from the fact that claims and evidence are woven into narrative text. While prose is valuable for explaining motivation and argumentation, it is not optimal for supporting cumulative synthesis. A reader wishing to compare claims across papers must extract and interpret statements from natural language, a process that does not scale as the literature grows.
 
-\textbf{What this principle requires.} Artifacts should represent claims, evidence, and context as structured, first-class entities. A claim should be identifiable: ``Technique X improves metric Y on dataset Z by $\delta$ under conditions C.'' The evidence supporting that claim---experimental configuration, data, results, analysis---should be explicitly linked. The context---assumptions, limitations, methodological decisions---should be preserved alongside the claim, not buried in prose.
-
-Structured representations enable direct comparison, aggregation, and reasoning over results. If two papers make conflicting claims about the same technique, the conflict becomes visible and resolvable by examining the structured evidence and context. If a dataset is updated or a metric refined, claims referencing that dataset or metric can be systematically identified and reevaluated.
-
-\textbf{Instantiation examples.} Structured representations could take many forms:
-\begin{itemize}
-\item \textit{Semantic annotations:} Papers supplemented with machine-readable metadata describing claims, experimental setups, and results.
-\item \textit{Knowledge graph representations:} Claims, techniques, datasets, and metrics represented as entities with typed relationships, enabling queries like ``Which papers claim improvements on dataset D using technique family T?''
-\item \textit{Computational notebooks with assertions:} Executable analyses in which key claims are formalized as assertions that can be tested, versioned, and reused.
-\end{itemize}
-
-These are illustrative, not prescriptive. The principle is that structure should complement prose, making knowledge directly accessible for synthesis while preserving the explanatory power of narrative.
+Artifacts should represent claims, evidence, and context as structured, first-class entities. A claim should be identifiable: ``Technique X improves metric Y on dataset Z by $\delta$ under conditions C.'' Evidence and context should be explicitly linked, not buried in prose. Structured representations enable direct comparison and reasoning: conflicting claims become visible and resolvable by examining structured evidence, and claims referencing updated datasets can be systematically reevaluated. Instantiations could include semantic annotations (machine-readable metadata describing claims and results) or knowledge graphs~\cite{orkg,wang2020} (entities with typed relationships enabling queries like ``Which papers claim improvements on dataset D?''). Structure should complement prose, making knowledge directly accessible while preserving narrative's explanatory power.
 
 \subsection{Principle 2: Inspectable and Provenance-Aware}
 
 \textbf{Principle:} Research artifacts should preserve the full provenance of claims---from raw data through methodological decisions to final results---and make this provenance inspectable.
 
-The second breakdown---loss of context and provenance---occurs because the reasoning behind decisions fades as knowledge moves through the publication pipeline. A paper reports final results but often omits the path taken to reach them: why this dataset, why this baseline, why this evaluation protocol. When later researchers attempt to build on the work, they must reconstruct this reasoning, often discovering that subtle choices had significant consequences.
+The second breakdown---loss of context and provenance---occurs because reasoning behind decisions fades as knowledge moves through publication. Papers report final results but often omit the path taken: why this dataset, baseline, or protocol. Later researchers must reconstruct this reasoning, often discovering subtle choices had significant consequences.
 
-\textbf{What this principle requires.} Artifacts should document not only what was found, but how and why. Every claim should trace back to its sources: the data, the code, the configuration, the assumptions. Methodological decisions should be explicitly recorded and justified: ``We used dataset D because it contains feature F relevant to hypothesis H.'' When results are updated---due to new data, corrected analyses, or refined methods---the provenance chain should track these changes, preserving the history of how understanding evolved.
-
-Provenance enables trust and reproducibility. A researcher can inspect the lineage of a claim, verify that it rests on sound evidence, and understand the conditions under which it holds. When claims conflict, provenance helps diagnose the source of divergence: different data, different preprocessing, different evaluation criteria.
-
-\textbf{Instantiation examples.} Provenance tracking could be realized through:
-\begin{itemize}
-\item \textit{Versioned computational artifacts:} Code, data, and configurations stored in version control systems with clear lineage from raw inputs to published results.
-\item \textit{Provenance graphs:} Explicit representations of how results were derived, linking claims to experiments, experiments to data, and data to sources.
-\item \textit{Decision logs:} Structured records of methodological choices, their rationales, and their impacts, made part of the permanent artifact.
-\end{itemize}
-
-Again, these are examples. The principle is that artifacts should be inspectable---transparent about their origins and decisions---so that future work can be built on solid, well-understood foundations.
+Artifacts should document not only what was found but how and why. Every claim should trace to its sources: data, code, configuration, assumptions. Methodological decisions should be explicitly justified, and when results are updated, the provenance chain should track changes~\cite{gonzalez-barahona2012}. Provenance enables trust: researchers can inspect a claim's lineage, verify evidence, and understand conditions. When claims conflict, provenance diagnoses divergence sources. Instantiations could include versioned computational artifacts (code and data in version control with clear lineage) or provenance graphs (explicit representations linking claims to experiments to data). Artifacts should be transparent about origins and decisions, enabling future work to build on solid foundations.
 
 \subsection{Principle 3: Long-Lived and Reusable}
 
 \textbf{Principle:} Research artifacts should support evolution and reuse, not remain static at the moment of publication.
 
-The third breakdown---claims evolve without tracking---and aspects of the first breakdown arise because papers are snapshots frozen in time. Once published, a paper does not update when new evidence emerges, when datasets are revised, or when methods are improved. Follow-on work cites the paper and describes differences in prose, but the original claim remains unchanged in the literature.
+Papers are snapshots frozen in time. Once published, they do not update when evidence emerges, datasets are revised, or methods improve. Follow-on work cites and describes differences in prose, but original claims remain unchanged.
 
-\textbf{What this principle requires.} Artifacts should be living substrates that can be updated, extended, and reused. When a dataset is corrected, claims depending on that dataset should be re-evaluable, not obsolete. When a technique is refined, prior results should be comparable to new results using updated methods. When claims are qualified or contradicted, these relationships should be reflected in the artifact, not scattered across disconnected papers.
-
-This does not mean papers should be continuously rewritten. Rather, the underlying structured representations---claims, evidence, configurations---should be decoupled from narrative documents. Narratives can remain stable as historical records, while the structured substrates evolve as understanding progresses.
-
-\textbf{Instantiation examples.} Long-lived artifacts could include:
-\begin{itemize}
-\item \textit{Living knowledge bases:} Repositories where claims, datasets, and techniques are maintained, versioned, and updated as new evidence accumulates.
-\item \textit{Executable benchmarks:} Evaluation frameworks that can be rerun with updated data or baselines, allowing claims to be retested and results to be continuously refined.
-\item \textit{Modular artifact ecosystems:} Components (datasets, models, evaluation scripts) designed for composition and reuse, enabling new studies to build directly on prior artifacts rather than reimplementing from scratch.
-\end{itemize}
-
-The principle is that knowledge should outlive individual papers, accumulating in shared substrates that reduce redundancy and enable direct building.
+Artifacts should be living substrates that can be updated, extended, and reused. When datasets are corrected, dependent claims should be re-evaluable. When techniques are refined, prior results should be comparable to new results. When claims are qualified, these relationships should be reflected in the artifact. This does not mean rewriting papers---rather, underlying structured representations should decouple from narrative documents. Narratives remain stable as historical records while structured substrates evolve. Instantiations could include living knowledge bases (repositories where claims and datasets are versioned and updated) or executable benchmarks (evaluation frameworks rerun with updated data). Knowledge should outlive individual papers, accumulating in shared substrates that reduce redundancy and enable direct building.
 
 \subsection{Principle 4: Governed with Human Oversight}
 
 \textbf{Principle:} Research artifacts and infrastructures should be governed by community processes that ensure quality, integrity, and ethical responsibility.
 
-The fourth breakdown---incentive structures favor novelty---reflects the tension between individual incentives and collective needs. Even if we had perfect technical infrastructure, cumulative progress requires coordination: standards for quality, mechanisms for resolving conflicts, and recognition for contributions that consolidate rather than merely add.
+Even with perfect technical infrastructure, cumulative progress requires coordination: quality standards, conflict resolution mechanisms, and recognition for consolidation work. Artifacts cannot govern themselves---structured representations and provenance tracking are valuable only if the community trusts, maintains, and uses them responsibly. This requires human oversight: peer review for knowledge contributions, curation, dispute resolution processes, and credit systems valuing infrastructure work alongside novel research.
 
-\textbf{What this principle requires.} Artifacts cannot govern themselves. Structured representations, provenance tracking, and living substrates are valuable only if the community trusts them, maintains them, and uses them responsibly. This requires human oversight: peer review for knowledge contributions, curation of shared resources, community processes for resolving disputes or establishing standards, and credit systems that value infrastructure work alongside novel research.
-
-Governance also addresses ethical concerns. Structured knowledge artifacts raise questions about ownership, attribution, bias, and access. Who controls a shared knowledge base? How is credit assigned when multiple researchers contribute incrementally? How do we ensure that knowledge infrastructures do not perpetuate biases present in underlying data? These are social and ethical questions, not purely technical ones, and they require community deliberation and ongoing stewardship.
-
-\textbf{Instantiation examples.} Governance mechanisms could include:
-\begin{itemize}
-\item \textit{Community curation processes:} Peer-reviewed contributions to shared knowledge bases, with clear criteria for inclusion, updating, and deprecation.
-\item \textit{Credit and attribution systems:} Mechanisms that recognize contributions to infrastructure, replication, and consolidation, not only novel results.
-\item \textit{Ethical oversight boards:} Community structures responsible for addressing bias, fairness, and access issues in shared knowledge infrastructures.
-\item \textit{Transparent governance models:} Decision-making processes for managing shared resources, resolving conflicts, and setting standards, with broad community input.
-\end{itemize}
-
-The principle is that cumulative progress is a collective endeavor. Technical solutions alone are insufficient; they must be embedded in social practices that align individual incentives with collective goals and ensure responsible stewardship of shared knowledge.
-
-\subsection{Mapping Principles to Breakdowns}
-
-These four principles are not independent---they address the interconnected breakdowns diagnosed earlier:
-
-\begin{itemize}
-\item \textbf{Structured and interpretable} artifacts address the isolation of knowledge by making claims and evidence directly comparable and composable.
-\item \textbf{Inspectable and provenance-aware} artifacts address the loss of context by preserving the reasoning and decisions behind results.
-\item \textbf{Long-lived and reusable} artifacts address the static nature of claims by enabling evolution and incremental refinement over time.
-\item \textbf{Governed with human oversight} addresses incentive misalignment by establishing community processes that value consolidation and ensure responsible stewardship.
-\end{itemize}
-
-Together, they describe a vision for research artifacts that support cumulative knowledge building: artifacts that are not isolated documents but interconnected, evolving substrates governed by community practices that align individual contributions with collective progress.
+Governance also addresses ethical concerns about ownership, attribution, bias, and access. Who controls shared knowledge bases? How is credit assigned for incremental contributions? How do we prevent infrastructures from perpetuating biases? These social and ethical questions require community deliberation and ongoing stewardship. Instantiations could include community curation processes (peer-reviewed contributions with clear criteria) or credit systems recognizing infrastructure, replication, and consolidation work. Cumulative progress is a collective endeavor---technical solutions must be embedded in social practices aligning individual incentives with collective goals.
 
 \subsection{From Principles to Practice}
 
-These principles are aspirational. Realizing them fully would require significant changes in how research is conducted, reviewed, published, and rewarded. We do not claim that these changes are easy or that any single intervention will suffice. But the principles provide a framework for evaluating incremental steps: Does a proposed tool, platform, or practice make artifacts more structured, more inspectable, more reusable, or better governed? If so, it moves the community toward more cumulative progress.
-
-Importantly, these principles are not tied to specific technologies. Knowledge graphs, computational notebooks, version control systems, and community repositories are all potential instantiations---but the principles themselves are technology-agnostic. They describe \textit{properties} that artifacts should have, leaving room for diverse implementations across different domains and research communities.
-
-The challenge is to move from principles to practice: to design systems, establish norms, and reform incentives in ways that make cumulative knowledge building not only possible but rewarded. We turn to the broader implications of this shift in the next section.
+These principles are aspirational, requiring significant changes in how research is conducted, reviewed, and rewarded. They provide a framework for evaluating incremental steps: Does a proposed tool or practice make artifacts more structured, inspectable, reusable, or better governed? The principles are technology-agnostic---\allowbreak knowledge graphs, computational notebooks, and repositories are potential instantiations, but the principles describe \textit{properties} that artifacts should have, leaving room for diverse implementations. The challenge is designing systems and reforming incentives to make cumulative knowledge building not only possible but rewarded.
