@@ -1,5 +1,7 @@
-\documentclass[sigconf,anonymous,review]{acmart}
+\documentclass[sigconf,review]{acmart}
 
+\usepackage{xspace}
+\usepackage{xcolor}
 \setcopyright{none}
 
 %%
@@ -113,7 +115,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Software engineering research has experienced sustained growth in both output and participation over the past decades. Yet concerns persist about the field's ability to accumulate, integrate, and reuse knowledge in ways that support long-term progress. To better understand how the community itself perceives these challenges, we analyze responses from the ICSE 2026 Future of Software Engineering pre-survey, which captures perspectives from a globally distributed and highly experienced set of researchers. Our analysis reveals a tension between increasing research productivity and the limited mechanisms available for synthesizing results, tracking evolving claims, and supporting cumulative understanding over time.
+Software engineering research has experienced rapid growth in both output and participation over the past decades. Yet concerns persist about the field's ability to accumulate, integrate, and reuse knowledge in ways that support long-term progress. To better understand how the community itself perceives these challenges, we analyze responses from the ICSE 2026 Future of Software Engineering pre-survey, which captures perspectives from 280 globally distributed and highly experienced researchers. Our analysis reveals a tension between increasing research productivity and the limited mechanisms available for synthesizing results, tracking evolving claims, and supporting cumulative understanding over time.
 
 Building on these observations, we diagnose four interrelated structural breakdowns: papers function as isolated knowledge units with claims embedded in prose; context and provenance are lost as knowledge moves through the publication pipeline; claims evolve without systematic tracking; and incentive structures favor novelty over consolidation. We argue that addressing these barriers requires rethinking the fundamental properties of research artifacts.
 
@@ -168,7 +170,7 @@ We articulate four technology-agnostic principles for future research artifacts:
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
-
+\input{code_world}
 \input{sections/01_introduction}
 % Removed standalone background section - merged essential citations into introduction
 % \input{sections/02_background}
