@@ -1,0 +1,19 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Generated PDFs (Overleaf will build these)
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
