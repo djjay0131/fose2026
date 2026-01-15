@@ -1,7 +1,7 @@
 \section{Rethinking Research Artifacts for Cumulative Progress}
 \label{sec:principles}
 
-The structural barriers arise from design choices in how artifacts are produced and shared. Addressing them requires reconsidering fundamental artifact properties. We articulate four technology-agnostic principles describing properties that systems, tools, or practices aiming to support knowledge accumulation should strive for. Implementations will vary across domains, but these principles provide a shared foundation for evaluating research infrastructure.
+The structural barriers arise from design choices in how artifacts \todo{define artifacts (and if/how they are related to knowledge accumulation)} are produced and shared. Addressing them requires reconsidering fundamental artifact properties. We articulate four technology-agnostic principles describing properties that systems, tools, or practices aiming to support knowledge accumulation should strive for. Implementations will vary across domains, but these principles provide a shared foundation for evaluating research infrastructure.
 
 \subsection{Principle 1: Structured and Interpretable}
 
@@ -13,7 +13,7 @@ Artifacts should represent claims, evidence, and context as structured, first-cl
 
 \subsection{Principle 2: Inspectable and Provenance-Aware}
 
-\textbf{Principle:} Research artifacts should preserve the full provenance of claims---from raw data through methodological decisions to final results---and make this provenance inspectable.
+\textbf{Principle:} Research artifacts should preserve the full provenance of claims---from raw data through methodological decisions to final results---and make this provenance inspectable \todo{what does inspectable mean?}.
 
 The second breakdown---loss of context and provenance---occurs because reasoning behind decisions fades as knowledge moves through publication. Papers report final results but often omit the path taken: why this dataset, baseline, or protocol. Later researchers must reconstruct this reasoning, often discovering subtle choices had significant consequences.
 
@@ -23,7 +23,7 @@ Artifacts should document not only what was found but how and why. Every claim s
 
 \textbf{Principle:} Research artifacts should support evolution and reuse, not remain static at the moment of publication.
 
-Papers are snapshots frozen in time. Once published, they rarely update when new evidence emerges, datasets are revised, or methods improve. Follow-on work cites and describes differences in prose, but original claims remain unchanged.
+Papers are snapshots frozen in time. Once published, they rarely update when new evidence emerges, datasets are revised, or methods improve. Follow-on work cites and describes differences in prose, but original claims remain unchanged. Further, research artifacts are often difficult or impossible to reuse. For example, prior efforts to replicate research systems published in ICSE and FSE tool demonstration tracks succeeded in running only about half of the tools (76/131), despite investing thousands of hours in installing, configurating, and executing the tools~\cite{murphyhill-reviving}.
 
 Artifacts should be living substrates that can be updated, extended, and reused. When datasets are corrected, dependent claims should be re-evaluable. When techniques are refined, prior results should be comparable to new results. When claims are qualified, these relationships should be reflected in the artifact. This does not mean rewriting papers---rather, underlying structured representations should decouple from narrative documents. Narratives remain stable as historical records while structured substrates evolve. Instantiations could include living knowledge bases (\ie repositories where claims and datasets are versioned and updated) or executable benchmarks (\ie evaluation frameworks rerun with updated data). Knowledge should outlive individual papers, accumulating in shared substrates that reduce redundancy and enable direct building.
 
