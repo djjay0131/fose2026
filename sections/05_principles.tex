@@ -1,7 +1,9 @@
 \section{Rethinking Research Artifacts for Cumulative Progress}
 \label{sec:principles}
 
-The structural barriers arise from design choices in how artifacts \todo{define artifacts (and if/how they are related to knowledge accumulation)} are produced and shared. Addressing them requires reconsidering fundamental artifact properties. We articulate four technology-agnostic principles describing properties that systems, tools, or practices aiming to support knowledge accumulation should strive for. Implementations will vary across domains, but these principles provide a shared foundation for evaluating research infrastructure.
+The structural barriers arise from design choices in how research artifacts are produced and shared. We use \textit{research artifacts} to refer broadly to the tangible outputs of research: papers, datasets, code repositories, benchmarks, computational notebooks, knowledge graphs, and experimental protocols. These artifacts serve as vessels for knowledge---they encode claims, evidence, methodological context, and the provenance of results. The degree to which knowledge accumulates over time depends fundamentally on the properties of these artifacts: whether claims are extractable, evidence is traceable, artifacts remain usable beyond publication, and communities can collaboratively build upon prior work.
+
+Addressing the diagnosed barriers requires reconsidering fundamental artifact properties. We articulate four technology-agnostic principles describing properties that systems, tools, or practices aiming to support knowledge accumulation should strive for. Implementations will vary across domains, but these principles provide a shared foundation for evaluating research infrastructure.
 
 \subsection{Principle 1: Structured and Interpretable}
 
@@ -13,7 +15,7 @@ Artifacts should represent claims, evidence, and context as structured, first-cl
 
 \subsection{Principle 2: Inspectable and Provenance-Aware}
 
-\textbf{Principle:} Research artifacts should preserve the full provenance of claims---from raw data through methodological decisions to final results---and make this provenance inspectable \todo{what does inspectable mean?}.
+\textbf{Principle:} Research artifacts should preserve the full provenance of claims---from raw data through methodological decisions to final results---and make this provenance inspectable (\ie accessible and understandable by other researchers who wish to examine, verify, or build upon the work).
 
 The second breakdown---loss of context and provenance---occurs because reasoning behind decisions fades as knowledge moves through publication. Papers report final results but often omit the path taken: why this dataset, baseline, or protocol. Later researchers must reconstruct this reasoning, often discovering subtle choices had significant consequences.
 
