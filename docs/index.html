@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Papers to Progress: Rethinking Knowledge Accumulation in Software Engineering</title>
+  <meta name="description" content="ICSE-FoSE 2026 paper on rethinking knowledge accumulation in software engineering research.">
+  <meta name="keywords" content="knowledge accumulation, research artifacts, software engineering, ICSE, FOSE 2026">
+  <meta name="authors" content="Jason Cusati, Chris Brown">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="From Papers to Progress: Rethinking Knowledge Accumulation in Software Engineering">
+  <meta property="og:description" content="ICSE-FoSE 2026 paper arguing that high research productivity does not equal cumulative progress, and proposing four principles for future research artifacts.">
+  <meta property="og:type" content="article">
+
+  <style>
+    :root {
+      --primary: #1a365d;
+      --accent: #2b6cb0;
+      --text: #2d3748;
+      --muted: #718096;
+      --bg: #ffffff;
+      --surface: #f7fafc;
+      --border: #e2e8f0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 3rem 0 2.5rem;
+    }
+
+    header .venue {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      line-height: 1.3;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+    }
+
+    header .authors {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    header .authors a {
+      color: #bee3f8;
+      text-decoration: none;
+    }
+
+    header .authors a:hover {
+      text-decoration: underline;
+    }
+
+    .links-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .links-bar .container {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links-bar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .links-bar a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2.5rem 0 4rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .principles-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.5rem; }
+    }
+
+    .principle-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem;
+    }
+
+    .principle-card h3 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .principle-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .breakdowns {
+      list-style: none;
+      padding: 0;
+    }
+
+    .breakdowns li {
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .breakdowns li:last-child { border-bottom: none; }
+
+    .breakdowns li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .breakdowns li strong {
+      display: block;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .breakdowns li span {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .citation {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+      text-align: center;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="venue">ICSE-FoSE 2026 &middot; April 12&ndash;18 &middot; Rio de Janeiro, Brazil</div>
+    <h1>From Papers to Progress: Rethinking Knowledge Accumulation in Software Engineering</h1>
+    <div class="authors">
+      <a href="mailto:djjay@vt.edu">Jason Cusati</a> and
+      <a href="mailto:dcbrown@vt.edu">Chris Brown</a>
+      &middot; Virginia Tech
+    </div>
+  </div>
+</header>
+
+<div class="links-bar">
+  <div class="container">
+    <a href="https://doi.org/10.1145/3793657.3793888">Paper (ACM DL)</a>
+    <a href="https://github.com/djjay0131/fose2026">Source Code</a>
+    <a href="https://doi.org/10.5281/zenodo.18217799">Survey Data (Zenodo)</a>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        Software engineering research has experienced rapid growth in both output and participation over the past decades. Yet concerns persist about the field's ability to accumulate, integrate, and reuse knowledge in ways that support long-term progress. To better understand how the community itself perceives these challenges, we analyze responses from the ICSE 2026 Future of Software Engineering pre-survey, which captures perspectives from 280 globally distributed and highly experienced researchers.
+      </p>
+      <p>
+        Our analysis reveals a tension between increasing research productivity and the limited mechanisms available for synthesizing results, tracking evolving claims, and supporting cumulative understanding over time. We diagnose four interrelated structural breakdowns and articulate four technology-agnostic principles for future research artifacts, positioning FOSE as a venue for experimenting with alternative artifact designs that support cumulative scientific progress.
+      </p>
+    </section>
+
+    <section>
+      <h2>Structural Breakdowns</h2>
+      <p>If the community is experienced, productive, and global, yet still struggles to build on prior work, the barriers are structural:</p>
+      <ul class="breakdowns">
+        <li>
+          <strong>Papers as Isolated Knowledge Units</strong>
+          <span>Claims get buried in prose; evidence linkages stay implicit; results freeze at publication time.</span>
+        </li>
+        <li>
+          <strong>Loss of Context and Provenance</strong>
+          <span>Methodological rationale fades as work gets cited; carefully qualified findings become unqualified facts.</span>
+        </li>
+        <li>
+          <strong>Claims Evolve Without Tracking</strong>
+          <span>Contradictions go unflagged; refinements stay implicit; claim relationships appear only in natural language.</span>
+        </li>
+        <li>
+          <strong>Incentive Structures Favor Novelty</strong>
+          <span>Publication venues reward new techniques; replication and synthesis face higher acceptance bars.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Four Principles for Future Research Artifacts</h2>
+      <div class="principles-grid">
+        <div class="principle-card">
+          <h3>1. Structured &amp; Interpretable</h3>
+          <p>Claims, evidence, and context should be explicit and directly accessible, not just embedded in prose.</p>
+        </div>
+        <div class="principle-card">
+          <h3>2. Inspectable &amp; Provenance-Aware</h3>
+          <p>Artifacts should preserve the full provenance of claims, from raw data through decisions to results.</p>
+        </div>
+        <div class="principle-card">
+          <h3>3. Long-Lived &amp; Reusable</h3>
+          <p>Artifacts should support evolution and reuse, not remain static snapshots frozen at publication.</p>
+        </div>
+        <div class="principle-card">
+          <h3>4. Governed with Human Oversight</h3>
+          <p>Community processes should ensure quality, integrity, and ethical responsibility for shared infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Survey</h2>
+      <p>
+        We ground our diagnosis in the ICSE 2026 Future of Software Engineering pre-survey (n=280). Respondents span six geographic regions and represent a mature, productive community: 57% have 11+ years of SE research experience and 44% authored 11+ papers in the past three years. This profile matters because if knowledge accumulation remains limited despite all this expertise and output, the barriers are structural, not individual.
+      </p>
+      <p>
+        The survey data is publicly available on <a href="https://doi.org/10.5281/zenodo.18217799">Zenodo</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Citation</h2>
+      <div class="citation">
+        Jason Cusati and Chris Brown. 2026. From Papers to Progress: Rethinking Knowledge Accumulation in Software Engineering. In <em>2026 IEEE/ACM 48th International Conference on Software Engineering: Future of Software Engineering (ICSE-FoSE)</em>, April 12&ndash;18, 2026, Rio de Janeiro, Brazil. ACM, New York, NY, USA.
+        <a href="https://doi.org/10.1145/3793657.3793888">https://doi.org/10.1145/3793657.3793888</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Jason Cusati and Chris Brown. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </div>
+</footer>
+
+</body>
+</html>
